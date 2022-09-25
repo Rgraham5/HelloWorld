@@ -11,14 +11,20 @@ public class ClassDemo {
             case "Km":
             switch (targetMetric){
                 case "m":
-                targetNum = sourceNum * 1000;
+                    targetNum = sourceNum * 1000;
                 break;
                 case "mile":
-                targetNum = sourceNum / (float) 1.6;
+                    targetNum = sourceNum / (float) 1.6;
                 break;
                 default:
-                System.out.println(x: "Invalid");
+                    System.out.printl(x:"Invalid");
+                    return targetNum;
             }
+            case "kg":
+            break;
+            default:
+            System.out.printl(x:"Invalid");
+            return targetNum;
         }
         System.out.printf(format: "%.2f %s = %.2f %s%n", sourceNum, sourceMetric, targetNum, targetMetric);
         return targetNum;
