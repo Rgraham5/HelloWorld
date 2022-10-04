@@ -76,5 +76,6 @@ public static int[] printArray(int[] array) {
         // writeArrayToFile(array, fileName);
         int [] array = readArrayFromFile(fileName);
         bubbleSort(array);
+        writeArrayToFile(array, fileName: "sorted.txt");
     }
 }
